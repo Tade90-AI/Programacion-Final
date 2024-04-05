@@ -1,0 +1,318 @@
+/*<------------------------------------------- cuerpo ------------------------------------------>*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #80352F;
+
+  scroll-behavior: smooth;
+}
+
+/*<---------------------------------------------- Navegador -------------------------------->*/
+.container {
+  background: #55231F;
+  width: 100%;
+  height: 60px;
+    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+
+  z-index: 9999;
+}
+
+.logo {
+  width: 62px;
+  margin: 0;
+}
+
+.logo img {
+  width: 100%;
+
+  vertical-align: middle;
+}
+
+.item-options {
+  font-family: Century Gothic;
+  font-weight: bold;
+  color: white;
+
+  margin: 0 2rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.item-options:hover {
+  color: #b48581;
+}
+
+/*<---------------------------------------------- Texto e Imagen -------------------------------->*/
+.ExpIzq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.InfoIzq {
+  font-family: Century Gothic;
+  color: white;
+
+  flex-basis: 60%;
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 0px;
+  vertical-align: middle;
+}
+
+.InfoIzq h1 {
+  font-size: 40px;
+}
+
+.InfoIzq p {
+  font-size: 19px;
+  line-height: 1.4rem;
+}
+
+.ExpDer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.InfoDer {
+  font-family: Century Gothic;
+  color: white;
+
+  flex-basis: 60%;
+  text-align: right;
+  margin-left: 0px;
+  margin-right: 150px;
+  vertical-align: middle;
+}
+
+.InfoDer h1 {
+  font-size: 40px;
+}
+
+.InfoDer p {
+  font-size: 19px;
+  line-height: 1.4rem;
+}
+
+.image {
+  flex-basis: 50%;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 80%;
+  height: auto;
+}
+
+.fond1 {
+  background: #80352F;
+  height: 100vh;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  align-items: center;
+}
+
+.fond2 {
+  background: #B24840;
+  height: 100vh;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  align-items: center;
+}
+
+/*<---------------------------------------------- Footer -------------------------------->*/
+footer {
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 11px;
+  color: white;
+
+  margin: 0px auto;
+  padding: 70px 0;
+
+  vertical-align: middle;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logos {
+  width: 20px;
+  margin: auto;
+  padding: 10px;
+  filter: brightness(0) invert(1);
+}
+
+/*<---------------------------------------------- Media-------------------------------->*/
+@media (max-width: 728px) {
+
+/*<---------------------------------------------- Navegador -------------------------------->*/
+  .container {
+    background: #482826;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+
+  .logo {
+    width: 116px;
+    margin: 0;
+    order: -1;
+  }
+
+  .logo img {
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .item-options {
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    text-decoration: none;
+    transition: 0.5s;
+    display: block;
+  }
+
+  .item-options:hover {
+    color: #917d7c;
+  }
+
+  nav {
+    text-align: right;
+  }
+
+/*<---------------------------------------------- Texto e Imagen -------------------------------->*/
+  .ExpIzq {
+    display: flex;
+    flex-direction: column;  
+  }
+
+  .InfoIzq {
+    font-family: Century Gothic;
+    color: white;
+
+    flex-basis: 100%;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    vertical-align: middle;
+  }
+
+  .InfoIzq h1 {
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .InfoIzq p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 1.4rem;
+  }
+
+  .ExpDer {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .InfoDer {
+    font-family: Century Gothic;
+    color: white;
+
+    flex-basis: 100%;
+    text-align: right;
+    margin-left: 25px;
+    margin-right: 25px;
+    vertical-align: middle;
+  }
+
+  .InfoDer h1 {
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .InfoDer p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 1.4rem;
+  }
+
+  .image {
+    flex-basis: 100%;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  img {
+    vertical-align: middle;
+    max-width: 60%;
+    height: auto;
+  }
+
+  .fond1 {
+    background: #80352F;
+    height: 100vh;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+  }
+
+  .fond2 {
+    background: #B24840;
+    height: 100vh;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+  }
+}

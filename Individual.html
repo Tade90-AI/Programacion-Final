@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title> Drawing Noob </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- estilo -->
+        <link rel="stylesheet" href="Estilos/StyleIndividual.css"> 
+    </head>
+    
+<body>
+    <!----------------------------------- Barra Navegador ----------------------------------->
+    <header class="container">
+        <figure class="logo">
+            <a href="index.html">
+                <img src="Recursos/Logos/DN Abreviado.svg" alt="Logo">
+            </a>
+        </figure>
+
+        <nav>
+            <a href="Acerca.html" class="item-options">Acerca de mí</a>
+            <a href="Portafolio.html" class="item-options">Portafolio</a>
+            <a href="Contacto.html" class="item-options">Contacto</a>
+        </nav>
+    </header>
+
+    <!----------------------------------- Informacion ----------------------------------->
+    <section id="pantalla-dividida">
+        <div class="izquierda">
+            <h1 id="titulo"></h1>
+            <p id="descripcion"></p>
+        </div>
+        <div class="derecha">
+            <img class="ilus" id="imagen1" src="">
+            <img class="ilus" id="imagen2" src="">
+        </div>
+    </section>
+
+    <section id="parallax" class="parallax bg">
+        <div class="parallax-content">
+            <h1>Tu mente es el lienzo,</h1>
+            <p>tu creatividad la pintura.</p>
+        </div>
+    </section>
+
+    <section class="ImagenesExtra">
+        <div class="Muestras">
+            <img class="Mues" id="imagen3" src="">
+            <img class="Mues" id="imagen4" src="">
+            <img class="Mues" id="imagen5" src="">
+        </div>
+    </section>
+
+    <!----------------------------------- Footer ----------------------------------->
+    <div class="footer-container">
+        <footer> 2024 Drawing Noob. Derechos reservados </footer>
+        <div class="logos-container">
+            <a href="https://www.instagram.com/drawing_noob7/" target="_blank">
+                <img class="logos" src="Recursos/Logos/Instagram_Logo_Portafolio.svg">
+            </a>
+            <a href="https://twitter.com/DrawingNoob5" target="_blank">
+                <img class="logos" src="Recursos/Logos/X_Logo_Portafolio.svg">
+            </a>
+           <a href="https://www.pixiv.net/en/users/65803111" target="_blank">
+            <img class="logos" src="Recursos/Logos/Pixiv_Logo_Portafolio.svg">
+           </a>
+        </div>
+    </div>
+    
+    <script src="Ampliado.js"></script>
+    <script>
+        // Obtener los parámetros de la URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var rutaImagen1 = urlParams.get('ruta1');
+        var rutaImagen2 = urlParams.get('ruta2');
+        var rutaImagen3 = urlParams.get('ruta3'); // Nueva variable para la imagen 3
+        var rutaImagen4 = urlParams.get('ruta4'); // Nueva variable para la imagen 4
+        var rutaImagen5 = urlParams.get('ruta5'); // Nueva variable para la imagen 5
+
+        var rutaImagenParallax = urlParams.get('imagenParallax');
+        
+        var tituloImagen = urlParams.get('titulo');
+        var descripcionImagen = urlParams.get('descripcion');
+        
+        // Mostrar la información de la imagen
+        var tituloElemento = document.getElementById('titulo');
+        tituloElemento.textContent = tituloImagen;
+        
+        var descripcionElemento = document.getElementById('descripcion');
+        descripcionElemento.textContent = descripcionImagen;
+        
+        var imagenElemento1 = document.getElementById('imagen1');
+        imagenElemento1.src = rutaImagen1;
+        
+        var imagenElemento2 = document.getElementById('imagen2');
+        imagenElemento2.src = rutaImagen2;
+    
+        var imagenElemento3 = document.getElementById('imagen3'); // Nuevo elemento para la imagen 3
+        imagenElemento3.src = rutaImagen3;
+    
+        var imagenElemento4 = document.getElementById('imagen4'); // Nuevo elemento para la imagen 4
+        imagenElemento4.src = rutaImagen4;
+    
+        var imagenElemento5 = document.getElementById('imagen5'); // Nuevo elemento para la imagen 5
+        imagenElemento5.src = rutaImagen5;
+
+        var parallax = document.getElementById("parallax");
+        // Establecer la imagen de fondo dinámicamente
+        parallax.style.backgroundImage = "url('" + rutaImagenParallax + "')";
+    </script>
+
+</body>
+
+</html>
