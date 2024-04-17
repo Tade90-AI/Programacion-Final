@@ -5,26 +5,63 @@ body {
   background: #262626;
 }
 
+/*<---------------------------------------------- Saludo -------------------------------->*/
+.saludo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: Century Gothic;
+  font-size: 170px;
+  font-weight: bold;
+  line-height: 8.5rem;
+  color: #F2F24B;
+
+  flex-basis: 100%;
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
 /*<---------------------------------------------- Texto e Imagen -------------------------------->*/
 .Exp {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.text-left,
+.text-left {
+  align-items: center;
+
+  font-family: Century Gothic;
+  font-size: 19px;
+  line-height: 1.4rem;
+  color: white;
+
+  flex-basis: 60%;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
 .text-right {
   font-family: Century Gothic;
   font-size: 19px;
   line-height: 1.4rem;
   color: white;
 
-  flex-basis: 30%;
+  flex-basis: 60%;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   vertical-align: middle;
 }
 
@@ -159,6 +196,28 @@ footer {
 /*<---------------------------------------------- Media-------------------------------->*/
 @media (max-width: 728px) {
 
+/*<---------------------------------------------- Saludo -------------------------------->*/
+  .saludo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Century Gothic;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 4rem;
+    color: #F2F24B;
+
+    flex-basis: 100%;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+  }
+
+  
 /*<---------------------------------------------- Texto e Imagen -------------------------------->*/
   .Exp {
     display: flex;
@@ -176,8 +235,8 @@ footer {
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     vertical-align: middle;
   }
 

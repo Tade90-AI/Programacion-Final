@@ -289,7 +289,7 @@ footer {
     .ilus {
         height: 500px;
         width: 380px;
-        margin: 25px;
+        margin: 30px 16px;
         object-fit: cover;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.65);
         cursor: pointer;
@@ -333,7 +333,7 @@ footer {
     .Mues {
         height: 500px;
         width: 380px;
-        margin: 25px;
+        margin: 30px 16px;
         object-fit: cover;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.65);
         cursor: pointer;
