@@ -75,7 +75,7 @@ p {
 
 .derecha {
   background: #F19894;
-  height: 70vh;
+  /* height: 70vh; */
   width: 50%;
 
   display: flex;
